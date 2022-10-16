@@ -52,4 +52,17 @@ or $\varphi(a_1\mathbf{v}_1 + a_2 \mathbf{v}_2) = a_1 \varphi (\mathbf{v}_1) + a
     \item $T_A \text{ isomorphism} \Leftrightarrow A \text{ invertible square}$.
 \end{itemize}
 
-\paragraph{Rmk 7.13. $\bigoplus$ v.s. QS} Let $V := U \oplus W$. $\varphi: U\rightarrow U/W$ where $\mathbf{u}\rightarrow\bar{\mathbf{u}}=\mathbf{u}+ W$ is an \textbf{isomorphism}. 
+\paragraph{Rmk 7.13. $\bigoplus$ v.s. QS} Let $V := U \oplus W$. $\varphi: U\rightarrow U/W$ where $\mathbf{u}\rightarrow\bar{\mathbf{u}}=\mathbf{u}+ W$ is an \textbf{isomorphism}.
+
+\paragraph{Maps} Some Common Maps:
+\begin{itemize}[noitemsep,nolistsep]
+    \item \textbf{Zero Map}: $\mathbf{0}:V\rightarrow W$ with $\mathbf{v} \mapsto \mathbf{0}_W$;
+    \item \textbf{Scalar Map}: $\alpha I_V:V\rightarrow V$ with $\mathbf{v}\mapsto \alpha I_V(\mathbf{v})= \alpha\mathbf{v}$
+    \item \textbf{Inclusion Map}: $\iota : W\rightarrow V$ with $\mathbf{w}\mapsto \mathbf{w}$. This is \textbf{injective}.
+    \item \textbf{Restriction Map}: $T:V\rightarrow W$, let $V_1\subseteq V$ and $\iota: V_1\rightarrow V$ be the inclusion map. Then: $T_{V_1}:=T\circ \iota: V_1 \rightarrow W$ with $\mathbf{v}\mapsto (T\circ \iota)(\mathbf{v}) = T(\iota(\mathbf{v})) = T(\mathbf{v})$;
+    \item \textbf{Quotient Map}: $\gamma : V\rightarrow V/W$ with $\mathbf{v}\mapsto \overline{\mathbf{v}}$. This map is \textbf{surjective} with $\operatorname{Ker}(\gamma) = W$.
+\end{itemize}
+
+\paragraph{Mult.} Let $\varphi_1:V_1\rightarrow V_2$ and $\varphi_2:V_2\rightarrow V_3$, then $\varphi_2\varphi_1:=\varphi_2\circ\varphi_1$.
+
+\paragraph{Thm 7.28. Img as Subspace} Let $\varphi: V\rightarrow W$ and $V_1$ a subspace of $V$. Then $\varphi(V_1)$ is a subspace of $W$.
