@@ -1,12 +1,20 @@
-\documentclass{article}
+\documentclass[8pt]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,margin=1cm,landscape]{geometry}
 \usepackage{multicol}
 \usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{setspace}
+\usepackage{enumitem}
+\singlespacing
+\raggedright
 
 \begin{document}
-\section{Chapter 1}
-\subfile{chapter_01.tex}
+\begin{multicols*}{4}
+\setcounter{section}{1}
 \section{Chapter 2}
 \subfile{chapter_02.tex}
 \section{Chapter 3}
@@ -17,4 +25,7 @@
 \subfile{chapter_05.tex}
 \section{Chapter 6}
 \subfile{chapter_06.tex}
+\section{Chapter 7}
+\subfile{chapter_07.tex}
+\end{multicols*}
 \end{document}

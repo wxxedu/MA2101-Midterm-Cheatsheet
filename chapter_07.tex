@@ -1,0 +1,55 @@
+\paragraph{Def 7.1. Sum of Subspaces}$\sum_{i=1}^nS_i:=\{\sum_{i=1}^n\mathbf{x}_i\mid \mathbf{x_i}\in S_i\}$
+
+\paragraph{Def 7.3. Coset} $\overline{\mathbf{v}}:=\mathbf{v}+W$, or $[\mathbf{v}]:=\mathbf{v}+W$
+
+\paragraph{Ex 7.4. Coset Relation} The following 4 are equivalent:
+\begin{multicols}{2}
+\begin{itemize}[noitemsep,nolistsep]
+    \item $\mathbf{v} + W = W$, i.e. $\overline{\mathbf{v}}=\overline{\mathbf{0}}$;
+    \item $\mathbf{v}\in W$;
+    \item $\mathbf{v} + W \subseteq W$;
+    \item $W \subseteq \mathbf{v} + W$.
+\end{itemize}
+\end{multicols}
+
+\paragraph{Thm 7.5.} $\mathbf{v_2}-\mathbf{v_1}\in W \Rightarrow \overline{\mathbf{v}_1}=\overline{\mathbf{v}_2}$ 
+
+\paragraph{Thm 7.8. Quotient Space} Quotient space of $V$ modulo $W$:
+$V/W := \{\overline{\mathbf{v}}=\mathbf{v}+W\mid \mathbf{v}\in V\}$.
+$$\begin{aligned}
++:V/W\times V/W &\rightarrow V/W \\
+(\overline{\mathbf{v}_1}, \overline{\mathbf{v}_2}) & \mapsto \overline{\mathbf{v}_1} + \overline{\mathbf{v}_2} :=\overline{\mathbf{v_\text{1}+v_\text{2}}} \\
+\times:F\times V/W &\rightarrow V/W \\
+(a, \overline{\mathbf{v}_2}) & \mapsto a\overline{\mathbf{v}_1} := \overline{a\mathbf{v}_1}
+\end{aligned}$$
+
+\paragraph{Thm 7.9. QS Well-def} 1) Binary addition; 2) scalar mult are well defined; $V/W$ is a vector space over $F$ with $\mathbf{0}_{V/W}=\overline{\mathbf{0}_V}=\overline{\mathbf{w}}$.
+
+\paragraph{Thm 7.10. L.T.} $\varphi: V_1\rightarrow V_2$ is L.T. iff
+$$
+\begin{aligned}
+\varphi(\mathbf{v}_1 + \mathbf{v}_2) &= \varphi(\mathbf{v}_1) + \varphi(\mathbf{v}_2) & (\forall \mathbf{v}_i \in V)\\
+\varphi(a\mathbf{v}) &= a\varphi (\mathbf{v}) & (\forall a \in F, \forall \mathbf{v}\in V)
+\end{aligned}
+$$
+or $\varphi(a_1\mathbf{v}_1 + a_2 \mathbf{v}_2) = a_1 \varphi (\mathbf{v}_1) + a_2 \varphi (\mathbf{v}_2)$. In this case, $\varphi$ is a \textbf{linear operator}. 
+
+\paragraph{Def. 7.10. Isomorphism} $\varphi: V_1\rightarrow V_2$ is isomorphism if $\varphi$ is a \textbf{bijective} L.T. 
+
+\paragraph{Def.} Let $\varphi: V\rightarrow W$:
+\begin{itemize}[noitemsep,nolistsep]
+    \item \textbf{Domain}: $\operatorname{dom}(\varphi) := V$;
+    \item \textbf{Codomain}: $\operatorname{codomain}(\varphi):=W$;
+    \item \textbf{Kernel}: $\operatorname{Ker}(\varphi):=\{\mathbf{v}\mid \varphi(\mathbf{v}) = \mathbf{0}_W\}\subseteq V$;
+    \item \textbf{Range}: $R(\varphi):=\{\varphi(\mathbf{v})\mid \mathbf{v}\in V\}\subseteq W$.
+\end{itemize}
+
+\paragraph{Relation with Matrices} Let $T_A$ be L.T. assoc. with $A=(a_{ij})\in M_{m\times n}(F)$, then:
+\begin{itemize}[noitemsep,nolistsep]
+    \item $\operatorname{Ker}(T_A) =\operatorname{Null}(A) =\{X\in F_c^n\mid AX=\mathbf{0}\}\subseteq F_c^n$;
+    \item $\operatorname{Null}(A)=\mathbf{0} \Leftrightarrow T_A\text{ injective}$;
+    \item $(\dim R(A):=\operatorname{rank}(A)=m)\Leftrightarrow T_A \text{ surjective}$;
+    \item $T_A \text{ isomorphism} \Leftrightarrow A \text{ invertible square}$.
+\end{itemize}
+
+\paragraph{Rmk 7.13. $\bigoplus$ v.s. QS} Let $V := U \oplus W$. $\varphi: U\rightarrow U/W$ where $\mathbf{u}\rightarrow\bar{\mathbf{u}}=\mathbf{u}+ W$ is an \textbf{isomorphism}. 
