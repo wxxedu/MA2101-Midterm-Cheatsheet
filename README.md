@@ -9,7 +9,7 @@ Please write the notes for respective chapters in the relative files. The chapte
 If you were to use itemize or enumerate, please remember to include the following setting:
 
 ```latex
-\begin{enumerate}[noitemsep,nolistsep] % <- take note of here
+\begin{enumerate}[noitemsep,nolistsep] % <- take note of this
     \item This is an item. 
 \end{enumerate}
 ```
