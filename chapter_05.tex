@@ -1,0 +1,35 @@
+\paragraph{Def 5.10. Basis} A subset $B$ of a vector subspace $V$ is a basis iff:
+\begin{enumerate}[noitemsep,nolistsep]
+    \item $V = \operatorname{Span}(B)$; and
+    \item $B$ is L.I.
+\end{enumerate}
+
+alternatively (Thm 5.18), 
+
+\begin{enumerate}[noitemsep,nolistsep]
+    \item $B$ is L.I. / $\operatorname{Span}(B)=V$;
+    \item $|B| = n$.
+\end{enumerate}
+
+When $V$ has a basis $B$ with cardinality $|B| < \infty$, we say that $V$ is finite-dimensional, and define $\operatorname{dim}_FV:=|B|$.
+
+\paragraph{Thm 5.11. Equiv Basis Def I} $B$ is a basis of $V$ is equivalent to either of the following:
+
+\begin{itemize}[noitemsep,nolistsep]
+    \item Unique Expression Cond: $\forall \mathbf{v}\in V$, $\mathbf{v}=\sum_{i=1}^{n}a_i\mathbf{v}_i$, where such expression is unique; or
+    \item $V = \bigoplus_{i=1}^{n}\operatorname{Span}\{\mathbf{v}_i\} = \bigoplus_{i=1}^{n}F\mathbf{v}_i$
+\end{itemize}
+
+\paragraph{Thm 5.15. Dimension Well-def} Let $B$ be a basis of $V$, then:
+\begin{enumerate}[noitemsep,nolistsep]
+    \item $S\subseteq B \land |S|>|B| \Rightarrow S\text{ L.D.}$;
+    \item $T \subseteq B \land |T|<|B| \Rightarrow \operatorname{Span}(T)\neq V$;
+    \item $B'$ another basis, then $|B'| = |B|$.
+\end{enumerate}
+
+\paragraph{Thm 5.19. Basis of Direct Sum} Let $V$ be a vector space over $F$, $B$ be a basis of $V$, then:
+\begin{enumerate}[noitemsep,nolistsep]
+    \item $B=B_1\coprod \cdots \coprod B_s$. Then $W_i:=\operatorname{Span}(B_i)$ and $V =\bigoplus_{i=1}^sB_i$.
+    \item $V=\bigoplus_{i=1}^sW_i$. Then let $B_i$ be basis of $W_i$, we have $B = B_1\coprod \cdots \coprod B_s$.
+    \item if $V=\bigoplus_{i=1}^sW_i$, then $\operatorname{dim}_FV = \sum_{i=1}^s\operatorname{dim}_FW_i$.
+\end{enumerate}

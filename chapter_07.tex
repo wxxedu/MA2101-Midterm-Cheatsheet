@@ -36,6 +36,8 @@ or $\varphi(a_1\mathbf{v}_1 + a_2 \mathbf{v}_2) = a_1 \varphi (\mathbf{v}_1) + a
 
 \paragraph{Def. 7.10. Isomorphism} $\varphi: V_1\rightarrow V_2$ is isomorphism if $\varphi$ is a \textbf{bijective} L.T. 
 
+\textbf{Alt Def.} $\operatorname{Ker}(\varphi) = \{\mathbf{0}_V\} \land \varphi(V)=W \Leftrightarrow \varphi \text{ is isomorphism}$. 
+
 \paragraph{Def.} Let $\varphi: V\rightarrow W$:
 \begin{itemize}[noitemsep,nolistsep]
     \item \textbf{Domain}: $\operatorname{dom}(\varphi) := V$;
@@ -66,3 +68,25 @@ or $\varphi(a_1\mathbf{v}_1 + a_2 \mathbf{v}_2) = a_1 \varphi (\mathbf{v}_1) + a
 \paragraph{Mult.} Let $\varphi_1:V_1\rightarrow V_2$ and $\varphi_2:V_2\rightarrow V_3$, then $\varphi_2\varphi_1:=\varphi_2\circ\varphi_1$.
 
 \paragraph{Thm 7.28. Img as Subspace} Let $\varphi: V\rightarrow W$ and $V_1$ a subspace of $V$. Then $\varphi(V_1)$ is a subspace of $W$.
+
+\paragraph{Thm 7.29. Subspace V.S. Kernel}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Let $\varphi: V\rightarrow U$, $\operatorname{Ker}(\varphi)$ is a subspace of $V$; 
+    \item Let $W$ be a subspace of $V$, $\exists \varphi :V\rightarrow U$ s.t. $W = \operatorname{Ker}(\varphi)$. ($\varphi: V \rightarrow V/W$ with $\mathbf{v} \mapsto \overline{\mathbf{v}}$.)
+\end{itemize}
+
+\paragraph{Thm 7.39. $1^\text{st}$ Iso Thm} Let $\varphi: V \rightarrow U$ be LT. Then there is an isomorphism $\overline{\varphi}:V/\operatorname{Ker}(\varphi) \xrightarrow{\mathtt{\sim}} \varphi(V) \subseteq U$ where $\overline{\mathbf{v}}\mapsto \varphi(\mathbf{v})$ such that $\varphi=\overline{\varphi}\circ\gamma$ where $\gamma:V\rightarrow V/\operatorname{Ker}(\varphi)$ with $\mathbf{v}\rightarrow\overline{\mathbf{v}}$ is the quotient map, is a linear transformation. When $\varphi$ is surjective, we have the isomorphism: $\overline{\varphi}: V / \operatorname{Ker}(\varphi) \stackrel{\sim}{\rightarrow} U$.
+
+\paragraph{Thm 7.40. Basis of QS} Let $W$ be a subspace of $V$ with basis $B_1$. Extend $B_1$ to a basis $B:=B_1\coprod \{\mathbf{w}_{r+1}, \cdots, \mathbf{w}_n\}$. Then, the cosets $\{\overline{\mathbf{w}_{r+1}}, \cdots, \overline{\mathbf{w}_n}\}$ is the basis of the QS $V/W$.
+
+\paragraph{Thm 7.45. Dimension Thm} Let $\varphi: V\rightarrow W$ be LT between vector spaces over a field $F$. Then:
+$$
+\operatorname{dim}_F\operatorname{Ker}(\varphi) + \operatorname{dim}_F\varepsilon(V) = \operatorname{dim}_F V.
+$$
+If $A \in M_{m\times n}(F)$, then 
+$$
+\operatorname{nullity}(A) + \operatorname{rank}(A)=n
+$$
+
+\paragraph{Thm 7.46. $2^\text{nd}$ Iso Thm} Let $W_1$, $W_2$ be vector subspaces of $V$. The map 
+$$\begin{gathered}\varphi:W_1 /\left(W_1 \cap W_2\right) \rightarrow\left(W_1+W_2\right) / W_2 \\\mathbf{w}+\left(W_1 \cap W_2\right)=\overline{\mathbf{w}} \mapsto \overline{\mathbf{w}}=\mathbf{w}+W_2\end{gathered}$$ is a well-defined isomorphism. By this, we have $\dim W_1 + \dim W_2 = \dim(W_1 + W_2) + \dim (W_1  \cap W_2)$.

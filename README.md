@@ -18,7 +18,7 @@ The philosophy is that we write down all the definitions, theorems, and remarks 
 
 Common abbreviations are also appreciated for the sake of saving space. (Honestly I think 2 pieces of paper should be allowed, but we only have 1...) 
 
-## Contributors:
+## Contributors
 
 - [wxxedu](https://github.com/wxxedu)
 - 
